@@ -1,0 +1,20 @@
+package revisao_1_Completo;
+import java.util.Scanner;
+public class if1 {
+	public static void main(String args[]) {
+		Scanner ler = new Scanner(System.in);
+		int x;
+		System.out.println("Entre com um número inteiro:");
+ 		x= ler.nextInt();
+ 		System.out.println("O número inteiro "+x);
+ 		if (x>0) {
+			System.out.println("É positivo.");
+		}else if (x==0) {
+			System.out.println("É neutro.");
+		}else {
+			System.out.println("É negativo.");
+		}
+		ler.close();
+	}
+
+}

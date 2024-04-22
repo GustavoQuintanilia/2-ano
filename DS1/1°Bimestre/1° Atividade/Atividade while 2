@@ -1,0 +1,25 @@
+package revisao_1_Completo;
+import java.util.Scanner;
+public class while_Senha {
+	public static void main(String args[]) {
+		Scanner ler = new Scanner(System.in);
+		int s = 2002;
+		int v = 0;
+		
+		while (v != s) {
+			System.out.println("Entre com a senha:");
+	 		v= ler.nextInt();
+	 		if (v != s) {
+	 			System.out.println("Senha inválida.");
+				System.out.println("Tente novamente.");
+	 		} else {
+	 			System.out.println("Acesso permitido.");
+	 		}
+			
+		}
+		ler.close();
+	}
+
+		
+
+}
