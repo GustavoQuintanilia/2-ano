@@ -1,0 +1,18 @@
+.card{
+    opacity: 0.5;
+    transition: 0.9s;
+    border: solid 10px #F08080;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 10px 8px #696969;
+}
+
+.card:hover{
+    opacity: 0.9; 
+}
+
+a{
+    text-decoration: none;
+}

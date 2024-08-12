@@ -1,0 +1,62 @@
+
+   <!---Cabeçalho-->
+   {{> header}}
+
+      <!-- noticias -->
+      <div class="container-fluid">
+        <h4 id="scrollspyHeading1" style="margin-left: 80px; font-size: 40px; margin-top: 100px; text-align: center;">Real Madrid campeão: acompanhe ao vivo 
+            <br>a festa do título da Champions
+            <br>
+    
+            <img src="https://jpimg.com.br/uploads/2024/06/real-campeao-750x450.jpg" class="img-fluid" alt="..." style="background-color: #fff; width: 700px; height: 400px; padding: 10px; text-align: center; margin-top: 30px; border: solid 10px #F08080;"></h4>
+
+        <p style="background-color: #fff; font-size: 20px; margin-left: 80px; text-align: center; border: solid 10px #F08080;">O Real Madrid já está na capital espanhola para comemorar com seus torcedores 
+            <br>o título da Champions League, 15º na história do clube, conquistado neste sábado 
+            <br>ao bater o Borussia Dortmund por 2 a 0, em Wembley.
+            <br>
+        </p>
+
+        <h4 style="margin-left: 80px; font-size: 40px; margin-top: 100px; text-align: center;">
+          <img src="https://s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/audiopub-episodes/bs/2024/a/m/0pj5PaSjaGB1gpP3Vc7g/whatsapp-image-2024-06-01-at-19.35.31.jpeg" class="img-fluid" alt="..." style="background-color: #fff; width: 700px; height: 400px; padding: 10px; text-align: center; margin-top: 30px; border: solid 10px #F08080;">
+        </h4>
+            
+        <h4 id="scrollspyHeading2" style="margin-left: 80px; font-size: 40px; margin-top: 100px; text-align: center; margin-bottom: 30px;">O que aconteceu?</h4>
+        <p style="background-color: #fff; font-size: 20px; margin-left: 80px; text-align: center; border: solid 10px #F08080;">O canal oficial de YouTube do Real Madrid transmite 
+            <br>ao vivo os passos da delegação madridista 
+            <br>
+
+            O Real Madrid levantou sua 15ª taça da Champions League com a vitória por 2 a 0 
+            <br>sobre o Borussia Dortmund, em Londres. Carvajal, de cabeça, 
+            <br>e Vinicius Júnior marcaram os gols do triunfo espanhol.
+            <br>
+
+          Com o gol na decisão, Vini Jr se tornou o primeiro brasileiro 
+          <br>a balançar as redes em duas finais de Champions.
+        </p>
+      </div>
+    </div>
+
+      <!---Rodapé-->
+
+      <footer style="background-color: #F08080;">
+
+    <nav class="navbar" >
+      <div class="container-fluid">
+        <p class="navbar-brand">
+            {{#each dados}}
+              {{#if (eq this.id 4)}}
+                <h3>{{this.nome}}</h3>
+              {{/if}}
+            {{/each}}
+        </p>
+        <p class="navbar-brand">
+            {{#each dados}}
+              {{#if (eq this.id 4)}}
+                <h3>Data de publicação: {{this.data}}</h3>
+              {{/if}}
+            {{/each}}
+        </p>
+      </div>
+    </nav>
+  </footer>
+

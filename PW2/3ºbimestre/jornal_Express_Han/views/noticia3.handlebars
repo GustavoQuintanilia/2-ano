@@ -1,0 +1,63 @@
+
+    <!---Cabeçalho-->
+     {{> header}}
+
+      <!-- noticias -->
+      <div class="container-fluid">
+        <h4 id="scrollspyHeading1" style="margin-left: 80px; font-size: 40px; margin-top: 100px; text-align: center;">“Cidade de Deus”: série inspirada no filme 
+            <br>ganha 1º teaser; veja
+            <br>
+          
+            <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/05/serie-cidade-de-deus.jpg?w=1220&h=674&crop=1" class="img-fluid" alt="..." style="background-color: #fff; width: 700px; height: 400px; padding: 10px; text-align: center; margin-top: 30px; border: solid 10px #F08080;"></h4>
+
+        <p style="background-color: #fff; font-size: 20px; margin-left: 80px; text-align: center; border: solid 10px #F08080;">Os seis episódios do spin-off original da HBO 
+            <br>chegam na plataforma de streaming Max em agosto.
+
+            A produção é ambientada duas décadas após os acontecimentos do longa, 
+            <br>tendo como ponto de partida o trabalho de fotógrafo de Buscapé. Na trama, 
+            <br>a comunidade assolada pela disputa entre traficantes, policiais e milicianos 
+            <br>traz uma perspectiva de resistência coletiva.
+            <br>
+        </p>
+
+        <h4 id="scrollspyHeading1" style="margin-left: 80px; font-size: 40px; margin-top: 100px; text-align: center;">
+          <img src="https://cdn.folhape.com.br/upload/dn_arquivo/2024/06/1717294777.jpg" class="img-fluid" alt="..." style="background-color: #fff; width: 700px; height: 400px; padding: 10px; text-align: center; margin-top: 30px; border: solid 10px #F08080;">
+        </h4>
+
+            
+        <h4 id="scrollspyHeading2" style="margin-left: 80px; font-size: 40px; margin-top: 100px; text-align: center; margin-bottom: 30px;">O que aconteceu?</h4>
+        <p style="background-color: #fff; font-size: 20px; margin-left: 80px; text-align: center; border: solid 10px #F08080;">O seriado traz trechos do filme em flashbacks, 
+            <br>para reconstrução de lembranças e memórias afetivas dos protagonistas.
+
+            Nomes como Alexandre Rodrigues, 
+            <br>Thiago Martins, Roberta Rodrigues, 
+            Sabrina Rosa, Kiko Marques e Edson Oliveira retornam ao universo criado por Paulo Lins. 
+            <br>Além disso, novos talentos vindos de comunidades do Rio de Janeiro, como Cidade de Deus, 
+            <br>Vidigal e Mangueira, compõem o elenco.
+        </p>
+      </div>
+    </div>
+
+      <!---Rodapé-->
+
+      <footer style="background-color: #F08080;">
+
+    <nav class="navbar" >
+      <div class="container-fluid">
+        <p class="navbar-brand">
+            {{#each dados}}
+              {{#if (eq this.id 3)}}
+                <h3>{{this.nome}}</h3>
+              {{/if}}
+            {{/each}}
+        </p>
+        <p class="navbar-brand">
+            {{#each dados}}
+              {{#if (eq this.id 3)}}
+                <h3>Data de publicação: {{this.data}}</h3>
+              {{/if}}
+            {{/each}}
+        </p>
+      </div>
+    </nav>
+  </footer>

@@ -1,0 +1,67 @@
+
+     <!---Cabeçalho-->
+     {{> header}}
+
+      <!-- noticias -->
+
+      <div class="container-fluid">
+        <h4 id="scrollspyHeading1" style="margin-left: 80px; font-size: 40px; margin-top: 100px; text-align: center;">Número de pessoas mortas nas inundações no Rio Grande do Sul 
+          <br> aumenta, segunda última pesquisa!
+          <br>
+          
+          <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2024/05/07/675x450/1_enq20240507088-36879078.jpg?20240508071857?20240508071857" class="img-fluid" alt="..." style="background-color: #fff; width: 700px; height: 400px; padding: 10px; text-align: center; margin-top: 30px; border: solid 10px #F08080;"></h4>
+          
+          <h4 id="scrollspyHeading2" style="margin-left: 80px; font-size: 40px; margin-top: 50px; text-align: center; margin-bottom: 30px;">O que aconteceu?</h4>
+          <p style="background-color: #fff; font-size: 20px; margin-left: 80px; text-align: center; border: solid 10px #F08080;">Desde o dia 27 de abril, áreas no Vale do Rio Pardo, na região central do Rio Grande 
+          <br>do Sul, já sofriam com fortes chuvas e granizo,
+          <br>
+          mas foi em 29 de abril que o Instituto Nacional de Meteorologia (Inmet) emitiu 
+          <br>o primeiro alerta vermelho de volume elevado de chuva.
+          <br>
+          A situação só agravou-se, sendo decretado a maior tragédia
+          <br> ambiental sofrida no Estado.
+          <br>
+          </p>
+      </div>
+
+<div class="container-fluid">
+  <p style="background-color: #fff; font-size: 20px; margin-left: 80px; text-align: center; border: solid 10px #F08080;">O número de mortes pelas enchentes segue em 172, segundo o boletim divulgado às  
+    <br>9h desta 2ª feira (3.jun.2024) pela Defesa Civil do Estado.
+    <br>
+    Até o momento, há buscas por 42 desaparecidos, já são mais de 2,3 milhões
+    <br>de pessoas afetadas de alguma maneira e
+    <br>
+    580 mil estão desalojados.
+    <br>
+</p>
+
+<h4 id="scrollspyHeading1" style="margin-left: 80px; font-size: 40px; margin-top: 100px; text-align: center;">
+<img src="https://img.band.uol.com.br/image/2024/05/06/enchente-em-porto-alegre-no-rio-grande-do-sul-72837_800x450.webp" class="img-fluid" alt="..." style="background-color: #fff; width: 700px; height: 400px; padding: 10px; text-align: center; margin-top: 10px; border: solid 10px #F08080;"></h4>
+</div>
+</div>
+            
+        
+       
+       <!---Rodapé-->
+
+ <footer style="background-color: #F08080;">
+
+    <nav class="navbar" >
+      <div class="container-fluid">
+        <p class="navbar-brand">
+            {{#each dados}}
+              {{#if (eq this.id 5)}}
+                <h3>{{this.nome}}</h3>
+              {{/if}}
+            {{/each}}
+        </p>
+        <p class="navbar-brand">
+            {{#each dados}}
+              {{#if (eq this.id 5)}}
+                <h3>Data de publicação: {{this.data}}</h3>
+              {{/if}}
+            {{/each}}
+        </p>
+      </div>
+    </nav>
+  </footer>

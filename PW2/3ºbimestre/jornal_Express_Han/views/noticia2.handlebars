@@ -1,0 +1,59 @@
+
+    <!---Cabeçalho-->
+    {{> header}}
+
+      <!-- noticias -->
+      <div class="container-fluid">
+        <h4 id="scrollspyHeading1" style="margin-left: 80px; font-size: 40px; margin-top: 100px; text-align: center;">Corinthians não apresenta um futebol convincente, 
+            <br>diz Mano no Domingol
+            <br>
+          
+            <img src="https://cdn.meutimao.com.br/_upload/noticia/2024/02/04/o-corinthians-entrou-na-zona-de-rebaixamento-do-oh.jpg" class="img-fluid" alt="..." style="background-color: #fff; width: 700px; height: 400px; padding: 10px; text-align: center; margin-top: 30px; border: solid 10px #F08080;"></h4>
+
+        <p style="background-color: #fff; font-size: 20px; margin-left: 80px; text-align: center; border: solid 10px #F08080;">O programa Domingol com Benja, da CNN Brasil, 
+            <br>dedicou parte de sua edição deste domingo para analisar a situação do Corinthians no Campeonato Brasileiro. 
+            <br>Com o time na 17ª colocação, os comentaristas debateram se existe o risco de rebaixamento para a Série B.
+            <br>
+        </p>
+
+        <h4 id="scrollspyHeading1" style="margin-left: 80px; font-size: 40px; margin-top: 100px; text-align: center;">
+          <img src="https://cdn.meutimao.com.br/fotos-do-corinthians/w614/2023/03/12/jogadores_do_corinthians_lamentam_chance_perdida_3215.jpg" class="img-fluid" alt="..." style="background-color: #fff; width: 700px; height: 400px; padding: 10px; text-align: center; margin-top: 30px; border: solid 10px #F08080;">
+        </h4>
+
+            
+        <h4 id="scrollspyHeading2" style="margin-left: 80px; font-size: 40px; margin-top: 100px; text-align: center; margin-bottom: 30px;">O que aconteceu?</h4>
+        <p style="background-color: #fff; font-size: 20px; margin-left: 80px; text-align: center; border: solid 10px #F08080;">Mano reforçou que o Corinthians vem apresentando um futebol 
+            <br>pouco convincente há alguns anos, 
+            <br>sendo coadjuvante no cenário nacional — apesar de ocasionalmente chegar a finais, 
+            <br>como na Copa do Brasil de 2022.
+
+            “O Corinthians não apresenta um futebol convincente. E aí o mais otimista vai falar:
+            <br> ‘Ah, Mano, mas o Corinthians poderia ter empatado com o chute do Yuri Alberto que pegou na trave’. 
+            <br>O Corinthians foi dar uma finalização perigosa no jogo com 40 minutos do segundo tempo”, completou o comentarista.
+        </p>
+      </div>
+    </div>
+
+        <!---Rodapé-->
+       <footer style="background-color: #F08080;">
+
+    <nav class="navbar" >
+      <div class="container-fluid">
+        <p class="navbar-brand">
+            {{#each dados}}
+              {{#if (eq this.id 2)}}
+                <h3>{{this.nome}}</h3>
+              {{/if}}
+            {{/each}}
+        </p>
+        <p class="navbar-brand">
+            {{#each dados}}
+              {{#if (eq this.id 2)}}
+                <h3>Data de publicação: {{this.data}}</h3>
+              {{/if}}
+            {{/each}}
+        </p>
+      </div>
+    </nav>
+  </footer>
+

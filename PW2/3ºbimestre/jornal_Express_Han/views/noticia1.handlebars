@@ -1,0 +1,71 @@
+
+    <!---Cabeçalho-->
+     {{> header}}
+     
+      <!-- noticias -->
+
+      <div class="container-fluid">
+        <h4 id="scrollspyHeading1" style="margin-left: 80px; font-size: 40px; margin-top: 100px; text-align: center;">Mbappé será anunciado pelo Real Madrid 
+          <br> na segunda-feira, diz jornal
+          <br>
+          
+          <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/03/mbappe-selecao-francesa-amistoso-alemanha-e1711213188385.jpg?w=1080&h=607&crop=1" class="img-fluid" alt="..." style="background-color: #fff; width: 700px; height: 400px; padding: 10px; text-align: center; margin-top: 30px; border: solid 10px #F08080;"></h4>
+          
+          <h4 id="scrollspyHeading2" style="margin-left: 80px; font-size: 40px; margin-top: 50px; text-align: center; margin-bottom: 30px;">O que aconteceu?</h4>
+          <p style="background-color: #fff; font-size: 20px; margin-left: 80px; text-align: center; border: solid 10px #F08080;">O atacante francês Kylian Mbappé será anunciado como novo jogador do Real Madrid, 
+          <br>da Espanha, na segunda-feira (3). 
+          <br>
+          É o que diz o diário L’Equipe, da França. O capitão da seleção francesa, 
+          <br>que tem contrato se encerrando no dia 30 de junho com o PSG, 
+          <br>
+          já havia feito a escolha há dois meses, 
+          <br> mas os detalhes do contrato com o clube merengue só foram acertados agora.
+          <br>
+          </p>
+      </div>
+
+<div class="container-fluid">
+  <p style="background-color: #fff; font-size: 20px; margin-left: 80px; text-align: center; border: solid 10px #F08080;">Segundo o jornal parisiense, Mbappé só será apresentado no Real Madrid após a Eurocopa, 
+    <br>que começa em 14 de Junho e terá a final em 14 de Julho, em Berlim, Alemanha.
+    <br>
+    O maior artilheiro da história do PSG, com 256 gols em 308 partidas, 
+    <br>anunciou oficialmente sua saída do clube no dia último dia 10 de maio. 
+    <br>
+    Ele agradeceu os torcedores e companheiros de clube pelos sete anos felizes que viveu em Paris. 
+    <br>
+    O Real Madrid está em Londres, na Inglaterra, onde joga a final da Champions League neste sábado (1), 
+    <br>contra o Borussia Dortmund, em Wembley.
+    <br>
+</p>
+
+<h4 id="scrollspyHeading1" style="margin-left: 80px; font-size: 40px; margin-top: 100px; text-align: center;">
+<img src="https://esportenanet.com/wp-content/uploads/2023/02/maxresdefault2.jpeg" class="img-fluid" alt="..." style="background-color: #fff; width: 700px; height: 400px; padding: 10px; text-align: center; margin-top: 10px; border: solid 10px #F08080;"></h4>
+</div>
+</div>
+            
+        
+       
+       <!---Rodapé-->
+        <footer style="background-color: #F08080;">
+
+    <nav class="navbar" >
+      <div class="container-fluid">
+        <p class="navbar-brand">
+            {{#each dados}}
+              {{#if (eq this.id 1)}}
+                <h3>{{this.nome}}</h3>
+              {{/if}}
+            {{/each}}
+        </p>
+        <p class="navbar-brand">
+            {{#each dados}}
+              {{#if (eq this.id 1)}}
+                <h3>Data de publicação: {{this.data}}</h3>
+              {{/if}}
+            {{/each}}
+        </p>
+      </div>
+    </nav>
+  </footer>
+ 
+

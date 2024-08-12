@@ -1,0 +1,193 @@
+
+<!---Cabeçalho-->
+{{> header}}
+  
+<!---Carrocel-->
+
+<div id="carouselExampleCaptions" class="carousel slide" style="border-bottom: 20px solid #F08080;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://portaldatorcida.com.br/wp-content/uploads/2023/09/Mbappe-1-1.webp" class="d-block w-100" alt="..." style="height: 500px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Notícias em Alta</h5>
+        <p>Craque francês, Mbappé, será anunciado oficialmente no Real Madrid esta segunda.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://s2-ge.glbimg.com/ko9cJQ0B96IQfJLBJ0067L8p7pM=/0x0:1600x1013/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/w/I/XzM3jQQ8WvZTRnIhFf8Q/whatsapp-image-2023-10-23-at-19.20.46.jpeg" class="d-block w-100" alt="..." style="height: 500px;" >
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Notícias em Alta</h5>
+        <p>Corinthians corre o risco de descer para a Série B?</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/06/yz4exybomps.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Notícias em Alta</h5>
+        <p>Cidade de Deus, grande filme brasileiro, possuí uma série em produção e ganha seu 1º teaser!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://tntsports.com.br/__export/1717275536815/sites/esporteinterativo/img/2024/06/01/campexo-champions-23-24---16x9.png_114078245.png" class="d-block w-100" alt="..." style="height: 500px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Notícias em Alta</h5>
+        <p>Real Madrid, garante e aumenta vantagem! 15 vezes campeões da Liga dos Campeões da UEFA!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/05/chuvarscidade.jpg?w=1220&h=674&crop=1" class="d-block w-100" alt="..." style="height: 500px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Notícias em Alta</h5>
+        <p>Enchentes no Rio Grande do Sul, ainda são preocupações! O número de mortos aumenta ainda mais!</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  
+
+<!---Estrutura1-->
+
+<a href="http://localhost:5000/noticia1">
+  <div class="card mb-3" style="max-width: 950px; margin-top: 50px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://pbs.twimg.com/media/GGzh-wuaQAA3Cun.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Craque francês, Mbappé, será anunciado oficialmente no Real Madrid esta segunda.</h5>
+          <p class="card-text"> 
+            {{#each detalhes}}
+            {{#if (eq this.id 1)}}  
+            <p>{{this.Resumo}}</p>
+            {{/if}}
+            {{/each}}
+            </p>
+          <p class="card-text"><small class="text-body-secondary">Saiba mais!</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </a>
+ 
+  <!---Estrutura2-->
+
+<a href="http://localhost:5000/noticia2">
+  <div class="card mb-3" style="max-width: 950px; margin-top: 50px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://s2-ge.glbimg.com/RPV-tKfKm0LKbtE--GrLuDyQTng=/0x0:2248x1500/924x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2018/11/14/20181114_cruzeiro_x_corinthians166-8.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Corinthians corre o risco de descer para a Série B?</h5>
+          <p class="card-text">
+            {{#each detalhes}}
+            {{#if (eq this.id 2)}}  
+            <p>{{this.Resumo}}</p>
+            {{/if}}
+            {{/each}}
+            </p>
+          <p class="card-text"><small class="text-body-secondary">Saiba mais!</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </a>
+  <!---Estrutura3-->
+
+<a href="http://localhost:5000/noticia3">
+  <div class="card mb-3" style="max-width: 950px; margin-top: 50px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://lorena.r7.com/public/assets/img/galeria-imagens/lorena65d52f2c74685.webp" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Cidade de Deus, grande filme brasileiro, possuí uma série em produção e ganha seu 1º teaser!</h5>
+          <p class="card-text">
+          {{#each detalhes}}
+          {{#if (eq this.id 3)}}  
+          <p>{{this.Resumo}}</p>
+          {{/if}}
+          {{/each}} 
+          </p>
+          <p class="card-text"><small class="text-body-secondary">Saiba mais!</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </a>
+  <!---Estrutura4-->
+
+<a href="http://localhost:5000/noticia4">
+  <div class="card mb-3" style="max-width: 950px; margin-top: 50px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://tntsports.com.br/__export/1717278998477/sites/esporteinterativo/img/2024/06/01/real_campexo.jpg_684403131.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Real Madrid, garante e aumenta vantagem! 15 vezes campeões da Liga dos Campeões da UEFA!</h5>
+          <p class="card-text"> 
+          {{#each detalhes}}
+          {{#if (eq this.id 4)}}  
+          <p>{{this.Resumo}}</p>
+          {{/if}}
+          {{/each}}
+          </p>
+          <p class="card-text"><small class="text-body-secondary">Saiba mais!</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </a>
+ 
+  <!---Estrutura5-->
+
+<a href="http://localhost:5000/noticia5">
+  <div class="card mb-3" style="max-width: 950px; margin-top: 50px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/4318/live/fd8d0a70-0c84-11ef-973f-9ff1ccd1ba8e.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Enchentes no Rio Grande do Sul, ainda são preocupações! O número de mortos aumenta ainda mais!</h5>
+          <p class="card-text">
+            {{#each detalhes}}
+            {{#if (eq this.id 5)}}  
+            <p>{{this.Resumo}}</p>
+            {{/if}}
+            {{/each}}
+      </p>
+          <p class="card-text"><small class="text-body-secondary">Saiba mais!</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </a>
+  
+
+
+  <!---Rodapé-->
+
+  {{> footer}}
+
+  
+  
