@@ -1,6 +1,5 @@
 console.log('Digite um número de 3 a 10:');
 
-
 function iniciar() {
     alert('Abra o console do navegador (F12 ou Ctrl + Shift + I) e digite um número de 3 a 10.');
     mostrarPrompt();
@@ -8,11 +7,13 @@ function iniciar() {
 
 function mostrarPrompt() {
     let num = prompt('Digite um número de 3 a 10 para selecionar uma forma geométrica:');
-    formasG(parseInt(num)); 
+    const formaS = parseInt(num);
+    
+    formasGPagina(formaS); 
+    
 }
-
-
-function formasG(a) {
+/*formasGConsole(formaS);*/
+function formasGConsole(a) {
     switch (a) {
         case 3:
             console.log('Triângulo');
@@ -70,106 +71,70 @@ function formasG(a) {
     }
 }
 
-function calcularArea(forma) {
-    let lado, base, altura, apotema;
-    switch (forma) {
+function formasGPagina(a) {
+    let forma, area, perimetro, imagemUrl;
+
+    switch (a) {
         case 3:
-            base = parseFloat(prompt('Digite o valor da base:'));
-            altura = parseFloat(prompt('Digite o valor da altura:'));
-            let areaTri = (base * altura) / 2;
-            console.log(`A área do triângulo é ${areaTri}`);
+            forma = 'Triângulo';
+            area = 'A = b * h / 2';
+            perimetro = 'P = a + b + c';
+            imagemUrl = 'img/img-3.png';
             break;
         case 4:
-            lado = parseFloat(prompt('Digite o valor do lado:'));
-            let areaQuad = lado * lado;
-            console.log(`A área do quadrado é ${areaQuad}`);
+            forma = 'Quadrado';
+            area = 'A = L²';
+            perimetro = 'P = L * 4';
+            imagemUrl = 'img/img-4.png';
             break;
         case 5:
-            lado = parseFloat(prompt('Digite o valor do lado:'));
-            apotema = parseFloat(prompt('Digite o valor do apótema:'));
-            let areaPent = (5 * lado * apotema) / 2;
-            console.log(`A área do pentágono é ${areaPent}`);
+            forma = 'Pentágono';
+            area = 'A = 3L² √3 / 2';
+            perimetro = 'P = 5 * L';
+            imagemUrl = 'img/img-5.png';
             break;
         case 6:
-            lado = parseFloat(prompt('Digite o valor do lado:'));
-            let areaHex = ((3 * Math.sqrt(3)) / 2) * lado * lado;
-            console.log(`A área do hexágono é ${areaHex}`);
+            forma = 'Hexágono';
+            area = 'A = (3√3 / 2) * L²';
+            perimetro = 'P = 6 * L';
+            imagemUrl = 'img/img-6.png';
             break;
         case 7:
-            lado = parseFloat(prompt('Digite o valor do lado:'));
-            apotema = parseFloat(prompt('Digite o valor do apótema:'));
-            let areaHept = (7 * lado * apotema) / 2;
-            console.log(`A área do heptágono é ${areaHept}`);
+            forma = 'Heptágono';
+            area = 'A = (7 / 4) * L² * cot(π / 7)';
+            perimetro = 'P = 7 * L';
+            imagemUrl = 'img/img-7.png'; 
             break;
         case 8:
-            lado = parseFloat(prompt('Digite o valor do lado:'));
-            apotema = parseFloat(prompt('Digite o valor do apótema:'));
-            let areaOct = (8 * lado * apotema) / 2;
-            console.log(`A área do octógono é ${areaOct}`);
+            forma = 'Octágono';
+            area = 'A = 2 * (1 + √2) * L²';
+            perimetro = 'P = 8 * L';
+            imagemUrl = 'img/img-8.png'; 
             break;
         case 9:
-            lado = parseFloat(prompt('Digite o valor do lado:'));
-            apotema = parseFloat(prompt('Digite o valor do apótema:'));
-            let areaEne = (9 * lado * apotema) / 2;
-            console.log(`A área do eneágono é ${areaEne}`);
+            forma = 'Eneágono';
+            area = 'A = (9 / 4) * L² * cot(π / 9)';
+            perimetro = 'P = 9 * L';
+            imagemUrl = 'img/img-9.png'; 
             break;
         case 10:
-            lado = parseFloat(prompt('Digite o valor do lado:'));
-            apotema = parseFloat(prompt('Digite o valor do apótema:'));
-            let areaDec = (5 * lado * apotema);
-            console.log(`A área do decágono é ${areaDec}`);
+            forma = 'Decágono';
+            area = 'A = (5 / 2) * L² * √(5 + 2√5)';
+            perimetro = 'P = 10 * L';
+            imagemUrl = 'img/img-10.png';
             break;
         default:
-            console.log('Cálculo de área não implementado para esta forma');
+            console.log('Forma Geométrica não implementada');
+            return; 
     }
+
+    mostrarForma(forma, area, perimetro, imagemUrl);
 }
 
-function calcularPerimetro(forma) {
-    let lado, a, b, c;
-    switch (forma) {
-        case 3:
-            a = parseFloat(prompt('Digite o valor do lado A:'));
-            b = parseFloat(prompt('Digite o valor do lado B:'));
-            c = parseFloat(prompt('Digite o valor do lado C:'));
-            let perimetroTri = a + b + c;
-            console.log(`O perímetro do triângulo é ${perimetroTri}`);
-            break;
-        case 4:
-            lado = parseFloat(prompt('Digite o valor do lado:'));
-            let perimetroQuad = lado * 4;
-            console.log(`O perímetro do quadrado é ${perimetroQuad}`);
-            break;
-        case 5:
-            lado = parseFloat(prompt('Digite o valor do lado:'));
-            let perimetroPent = lado * 5;
-            console.log(`O perímetro do pentágono é ${perimetroPent}`);
-            break;
-        case 6:
-            lado = parseFloat(prompt('Digite o valor do lado:'));
-            let perimetroHex = lado * 6;
-            console.log(`O perímetro do hexágono é ${perimetroHex}`);
-            break;
-        case 7:
-            lado = parseFloat(prompt('Digite o valor do lado:'));
-            let perimetroHept = lado * 7;
-            console.log(`O perímetro do heptágono é ${perimetroHept}`);
-            break;
-        case 8:
-            lado = parseFloat(prompt('Digite o valor do lado:'));
-            let perimetroOct = lado * 8;
-            console.log(`O perímetro do octógono é ${perimetroOct}`);
-            break;
-        case 9:
-            lado = parseFloat(prompt('Digite o valor do lado:'));
-            let perimetroEne = lado * 9;
-            console.log(`O perímetro do eneágono é ${perimetroEne}`);
-            break;
-        case 10:
-            lado = parseFloat(prompt('Digite o valor do lado:'));
-            let perimetroDec = lado * 10;
-            console.log(`O perímetro do decágono é ${perimetroDec}`);
-            break;
-        default:
-            console.log('Cálculo de perímetro não implementado para esta forma');
-    }
+function mostrarForma(forma, area, perimetro, imagemUrl) {
+    document.getElementById('formaNome').innerText = forma;
+    document.getElementById('areaCalculo').innerText = `Como calcular a Área: ${area}`;
+    document.getElementById('perimetroCalculo').innerText = `Como calcular o Perímetro: ${perimetro}`;
+    document.getElementById('formaImagem').src = imagemUrl;
+    document.getElementById('resultado').style.display = 'block';
 }

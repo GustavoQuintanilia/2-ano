@@ -21,14 +21,18 @@
         </div>
 
         <button onclick="iniciar()">Clique aqui para começar</button>
+    </div>
 
-        <div id="numeroInput">
-            <label for="numero">Digite um número de 3 a 10:</label><br>
-            <input type="number" id="numero" min="3" max="10" placeholder="Ex: 3 para Triângulo">
+    <div class="container" id="resultado" style="display: none;">
+        <div class="alert-info">
+            <h2 id="formaNome"></h2>
+            <p id="areaCalculo"></p>
+            <p id="perimetroCalculo"></p>
+            <img id="formaImagem" alt="Imagem da forma" />
         </div>
     </div>
 
     <script src="formas.js"></script>
-
+    <script src="calculos.js"></script>
 </body>
 </html>
