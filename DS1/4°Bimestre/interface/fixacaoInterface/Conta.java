@@ -21,7 +21,7 @@ public interface Conta {
 	double getSaldo();
 	void setSaldo(double saldo);
 		
-//-----------------------------ATRIBUTOS--------------------------------
+//-----------------------------MÉTODOS--------------------------------
 		
 //Depositar
 	double depositar(double valor);
