@@ -11,6 +11,7 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JComboBox;
 import javax.swing.JButton;
+import java.awt.Color;
 
 public class Cadastro extends JFrame {
 
@@ -42,6 +43,7 @@ public class Cadastro extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 649, 510);
 		contentPane = new JPanel();
+		contentPane.setBackground(new Color(128, 255, 255));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
