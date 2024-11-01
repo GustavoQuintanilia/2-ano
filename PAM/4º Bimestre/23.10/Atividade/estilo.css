@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+
+}
+
+.interacao{
+    background-color: #B0C4DE;
+    margin-top: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    width: 600px;
+    height: 400px;
+    border: solid 15px #8A2BE2;
+    border-top: 10px;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius:3%;
+    
+}
+
+h1{
+    background-color: #8A2BE2;
+    text-align: center;
+}
+
+h2{
+    margin-top: 20px;
+}
+
+button{
+    background-color: #F0E68C;
+    cursor: pointer;
+    margin-top: 130px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    width: 200px;
+    height: 80px;
+    border: solid 10px #8A2BE2;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.resposta{
+    width: 52%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.primeiros{
+    background-color: #F0E68C;
+    margin-top: 100px;
+    border: solid 15px #8A2BE2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    display: flex;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.ultimos{
+    background-color: #F0E68C;
+    border: solid 15px #8A2BE2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    display: flex;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+p{
+    padding: 8px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#tabuada5{
+    border-right: none;
+}
+
+#tabuada10{
+    border-right: none;
+}
