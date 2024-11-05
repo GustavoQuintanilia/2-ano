@@ -44,16 +44,16 @@ public class Principal extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnNewButton = new JButton("Calcular");
-		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		btnNewButton.setBackground(Color.PINK);
-		btnNewButton.setBounds(64, 367, 121, 48);
-		contentPane.add(btnNewButton);
+		JButton btnCalcular = new JButton("Calcular");
+		btnCalcular.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btnCalcular.setBackground(Color.PINK);
+		btnCalcular.setBounds(64, 367, 121, 48);
+		contentPane.add(btnCalcular);
 		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon(Principal.class.getResource("/img/simpsons2.png")));
-		lblNewLabel.setBounds(119, 71, 300, 200);
-		contentPane.add(lblNewLabel);
+		JLabel lblImgSimpsons = new JLabel("New label");
+		lblImgSimpsons.setIcon(new ImageIcon(Principal.class.getResource("/img/simpsons2.png")));
+		lblImgSimpsons.setBounds(119, 71, 300, 200);
+		contentPane.add(lblImgSimpsons);
 		
 		JButton btnCadastrar = new JButton("Cadastrar");
 		btnCadastrar.setFont(new Font("Tahoma", Font.PLAIN, 16));

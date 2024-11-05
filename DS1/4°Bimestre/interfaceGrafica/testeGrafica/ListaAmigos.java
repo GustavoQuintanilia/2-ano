@@ -37,34 +37,31 @@ public class ListaAmigos extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 656, 505);
 		contentPane = new JPanel();
-		contentPane.setBackground(new Color(128, 255, 255));
+		contentPane.setBackground(new Color(176, 224, 230));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Lista de Amigos");
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 33));
-		lblNewLabel.setBounds(210, 10, 235, 40);
-		contentPane.add(lblNewLabel);
+		JLabel lblTitulo = new JLabel("Lista de Amigos");
+		lblTitulo.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 33));
+		lblTitulo.setBounds(210, 10, 271, 40);
+		contentPane.add(lblTitulo);
 		
-		JPanel panel = new JPanel();
-		panel.setBounds(0, 85, 642, 251);
-		contentPane.add(panel);
-		
-		JButton btnNewButton = new JButton("Deletar");
-		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		btnNewButton.setBounds(463, 380, 131, 50);
-		contentPane.add(btnNewButton);
+		JButton btnDeletar = new JButton("Deletar");
+		btnDeletar.setForeground(new Color(255, 0, 0));
+		btnDeletar.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnDeletar.setBounds(463, 380, 131, 50);
+		contentPane.add(btnDeletar);
 		
 		JButton btnAtualizar = new JButton("Atualizar");
 		btnAtualizar.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		btnAtualizar.setBounds(49, 380, 131, 50);
 		contentPane.add(btnAtualizar);
 		
-		JButton btnAtualizar_1 = new JButton("<");
-		btnAtualizar_1.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		btnAtualizar_1.setBounds(0, 0, 66, 50);
-		contentPane.add(btnAtualizar_1);
+		JButton btnVoltar = new JButton("<");
+		btnVoltar.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnVoltar.setBounds(0, 0, 66, 50);
+		contentPane.add(btnVoltar);
 	}
 }

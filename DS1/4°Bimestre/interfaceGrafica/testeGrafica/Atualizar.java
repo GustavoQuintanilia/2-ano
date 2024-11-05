@@ -11,14 +11,15 @@ import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Color;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Atualizar extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
+	private JTextField textApelido;
+	private JTextField textNome;
+	private JTextField textId;
 
 	/**
 	 * Launch the application.
@@ -49,57 +50,67 @@ public class Atualizar extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Atualizar amigos");
-		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 33));
-		lblNewLabel.setBounds(161, 11, 282, 40);
-		contentPane.add(lblNewLabel);
+		JLabel lblTitulo = new JLabel("Atualizar amigos");
+		lblTitulo.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 33));
+		lblTitulo.setBounds(171, 11, 282, 40);
+		contentPane.add(lblTitulo);
 		
-		JLabel lblNewLabel_1 = new JLabel("id:");
-		lblNewLabel_1.setBounds(28, 93, 46, 14);
-		contentPane.add(lblNewLabel_1);
+		JLabel lblID = new JLabel("id:");
+		lblID.setFont(new Font("Arial", Font.PLAIN, 18));
+		lblID.setBounds(47, 93, 19, 14);
+		contentPane.add(lblID);
 		
-		textField = new JTextField();
-		textField.setText("<dynamic>");
-		textField.setBounds(84, 90, 424, 20);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		JLabel lblNome = new JLabel("Nome:");
+		lblNome.setFont(new Font("Arial", Font.PLAIN, 18));
+		lblNome.setBounds(47, 140, 52, 14);
+		contentPane.add(lblNome);
 		
-		JLabel lblNewLabel_2 = new JLabel("Nome:");
-		lblNewLabel_2.setBounds(28, 140, 46, 14);
-		contentPane.add(lblNewLabel_2);
+		JLabel lblApelido = new JLabel("Apelido:");
+		lblApelido.setFont(new Font("Arial", Font.PLAIN, 18));
+		lblApelido.setBounds(41, 193, 65, 19);
+		contentPane.add(lblApelido);
 		
-		textField_1 = new JTextField();
-		textField_1.setText("<dynamic>");
-		textField_1.setBounds(84, 137, 424, 20);
-		contentPane.add(textField_1);
-		textField_1.setColumns(10);
+		JLabel lblTelefone = new JLabel("Telefone:");
+		lblTelefone.setFont(new Font("Arial", Font.PLAIN, 18));
+		lblTelefone.setBounds(41, 243, 84, 14);
+		contentPane.add(lblTelefone);
 		
-		JLabel lblNewLabel_3 = new JLabel("Apelido:");
-		lblNewLabel_3.setBounds(28, 193, 46, 14);
-		contentPane.add(lblNewLabel_3);
+		JTextField textTelefone = new JTextField();
+		textTelefone.setText("<dynamic>");
+		textTelefone.setBounds(128, 238, 424, 29);
+		contentPane.add(textTelefone);
+		textTelefone.setColumns(10);
 		
-		textField_2 = new JTextField();
-		textField_2.setText("<dynamic>");
-		textField_2.setBounds(84, 190, 424, 20);
-		contentPane.add(textField_2);
-		textField_2.setColumns(10);
+		JButton btnAtualizar = new JButton("Atualizar");
+		btnAtualizar.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btnAtualizar.setBounds(45, 339, 108, 53);
+		contentPane.add(btnAtualizar);
 		
-		JLabel lblNewLabel_4 = new JLabel("Telefone:");
-		lblNewLabel_4.setBounds(28, 243, 46, 14);
-		contentPane.add(lblNewLabel_4);
+		JButton btnVoltar = new JButton("Voltar");
+		btnVoltar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnVoltar.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btnVoltar.setBounds(455, 339, 108, 53);
+		contentPane.add(btnVoltar);
 		
-		textField_3 = new JTextField();
-		textField_3.setText("<dynamic>");
-		textField_3.setBounds(84, 240, 424, 20);
-		contentPane.add(textField_3);
-		textField_3.setColumns(10);
+		textApelido = new JTextField();
+		textApelido.setText("<dynamic>");
+		textApelido.setColumns(10);
+		textApelido.setBounds(128, 190, 424, 29);
+		contentPane.add(textApelido);
 		
-		JButton btnNewButton = new JButton("Atualizar");
-		btnNewButton.setBounds(84, 339, 89, 40);
-		contentPane.add(btnNewButton);
+		textNome = new JTextField();
+		textNome.setText("<dynamic>");
+		textNome.setColumns(10);
+		textNome.setBounds(128, 135, 424, 29);
+		contentPane.add(textNome);
 		
-		JButton btnNewButton_1 = new JButton("Voltar");
-		btnNewButton_1.setBounds(419, 339, 89, 40);
-		contentPane.add(btnNewButton_1);
+		textId = new JTextField();
+		textId.setText("<dynamic>");
+		textId.setColumns(10);
+		textId.setBounds(128, 88, 424, 29);
+		contentPane.add(textId);
 	}
 }
